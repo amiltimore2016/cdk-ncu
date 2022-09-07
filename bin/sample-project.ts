@@ -4,6 +4,7 @@ import * as cdk from 'aws-cdk-lib';
 import { SampleProjectStack } from '../lib/sample-project-stack';
 
 const app = new cdk.App();
+// tslint:disable-next-line:no-unused-expression
 new SampleProjectStack(app, 'SampleProjectStack', {
   /* If you don't specify 'env', this stack will be environment-agnostic.
    * Account/Region-dependent features and context lookups will not work,

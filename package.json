@@ -8,20 +8,24 @@
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
-    "cdk": "cdk"
+    "cdk": "npx cdk",
+    "check": "npx npm-check-updates \"/aws-cdk/\"",
+    "upgrade": "npx npm-check-updates -u \"/aws-cdk/\" && npm install"
   },
   "devDependencies": {
     "@types/jest": "^27.5.0",
-    "@types/node": "10.17.27",
+    "@types/node": "^10.17.27",
     "@types/prettier": "2.6.0",
+    "aws-cdk": "2.40.0",
     "jest": "^27.5.1",
     "ts-jest": "^27.1.4",
-    "aws-cdk": "2.27.0",
     "ts-node": "^10.7.0",
+    "tslint": "^6.1.3",
     "typescript": "~3.9.7"
   },
   "dependencies": {
-    "aws-cdk-lib": "2.27.0",
+    "@aws-cdk/aws-s3": "^1.171.0",
+    "aws-cdk-lib": "2.40.0",
     "constructs": "^10.0.0",
     "source-map-support": "^0.5.21"
   }
